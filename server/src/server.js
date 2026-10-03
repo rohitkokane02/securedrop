@@ -18,11 +18,11 @@ app.get("/api/health", (req, res) => {
         success: true,
         message: "SecureDrop API is running"
     });
-});
+}); 
 
 app.use("/api/files", fileRoutes);
 app.use("/api/shares", shareRoutes);
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server running on port: ${PORT}`);
 })
