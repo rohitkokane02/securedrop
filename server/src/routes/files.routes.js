@@ -3,7 +3,7 @@ import multer from "multer";
 import crypto from "crypto";
 import bcrypt from "bcrypt";
 import { supabase } from "../config/supabase.js";
-
+const API_URL = process.env.VITE_API_URL;
 
 const router = express.Router();
 
